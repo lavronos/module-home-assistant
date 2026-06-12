@@ -1,0 +1,4 @@
+/bin/
+/dist/
+/third_party/
+.DS_Store
