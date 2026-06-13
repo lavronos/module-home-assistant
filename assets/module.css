@@ -86,6 +86,75 @@ h1 {
   color: #fca5a5;
 }
 
+.module-card--spaced {
+  margin-top: 16px;
+}
+
+.module-form {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.module-form label {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.module-form input,
+.module-form select {
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  padding: 0 12px;
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.module-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.module-actions button {
+  min-height: 40px;
+  padding: 0 16px;
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.055);
+  cursor: pointer;
+}
+
+.module-actions button.primary {
+  color: white;
+  border-color: #7c3aed;
+  background: #7c3aed;
+}
+
+.module-actions button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.module-code {
+  width: fit-content;
+  padding: 10px 14px;
+  color: white;
+  border-radius: 9px;
+  background: rgba(124, 58, 237, 0.25);
+  font: 700 18px/1 ui-monospace, monospace;
+  letter-spacing: 0.12em;
+}
+
 @media (max-width: 640px) {
   .module-shell {
     padding: 20px;

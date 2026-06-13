@@ -2,31 +2,32 @@
   "id": "home-assistant",
   "name": "Home Assistant",
   "label": "Home Assistant",
-  "version": "0.3.5",
-  "latestVersion": "0.3.5",
+  "version": "0.3.6",
+  "latestVersion": "0.3.6",
   "description": "Adds Home Assistant rooms, devices, entities, automations, scenes, scripts and events to LavronOS.",
   "summary": "Connects LavronOS to Home Assistant through secure bridge pairing and real smart-home snapshots.",
   "author": "LavronOS",
   "authorUrl": "https://lavronos.com",
-  "min_lavronos_version": "0.11.0",
+  "min_lavronos_version": "0.13.2",
   "max_lavronos_version": null,
   "category": "smart-home",
   "categoryLabel": "Smart Home",
   "license": "MIT",
   "icon": "home",
-  "href": "/home-assistant",
   "capabilities": ["HA Bridge pairing", "Rooms and devices", "Entities and sensors", "Automations and scenes", "Dashboard widget", "Telegram actions"],
   "systemDependencies": [],
   "runtime": {
     "page": {"type": "iframe", "path": "page.html", "minHeight": 760},
+    "settings": {"type": "iframe", "path": "settings.html", "minHeight": 430},
+    "server": {"entry": "server/index.mjs"},
     "dashboardWidgets": {
       "status": {"type": "iframe", "path": "dashboard.html", "minHeight": 340}
     }
   },
   "runtimeData": {
     "endpoints": [
-      {"label": "Bridge status", "url": "/api/ha/status"},
-      {"label": "Smart-home snapshot", "url": "/api/ha/snapshot"}
+      {"label": "Bridge status", "url": "/api/modules/runtime/home-assistant/api/status"},
+      {"label": "Smart-home snapshot", "url": "/api/modules/runtime/home-assistant/api/snapshot"}
     ]
   },
   "dashboardWidgets": [
@@ -38,5 +39,5 @@
       "runtime": {"type": "iframe", "path": "dashboard.html", "minHeight": 340}
     }
   ],
-  "changelog": ["0.3.5 - Moved the module into an independent repository with versioned Marketplace releases.", "0.3.4 - Improved registry refresh and room/device grouping."]
+  "changelog": ["0.3.6 - Added module-owned settings and server runtime hooks.", "0.3.5 - Moved the module into an independent repository with versioned Marketplace releases.", "0.3.4 - Improved registry refresh and room/device grouping."]
 }

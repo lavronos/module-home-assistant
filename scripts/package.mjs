@@ -33,7 +33,7 @@ const checksumPath = `${archivePath}.sha256`;
 fs.rmSync(distRoot, { recursive: true, force: true });
 fs.mkdirSync(distRoot, { recursive: true });
 
-for (const entry of ["module.json", "page.html", "dashboard.html", "assets", "bin", "CHANGELOG.md", "LICENSE", "THIRD_PARTY_NOTICES.md"]) {
+for (const entry of ["module.json", "page.html", "settings.html", "dashboard.html", "server", "assets", "bin", "CHANGELOG.md", "LICENSE", "THIRD_PARTY_NOTICES.md"]) {
   const source = path.join(repositoryRoot, entry);
   if (!fs.existsSync(source)) continue;
   fs.cpSync(source, path.join(stagingRoot, entry), { recursive: true });
