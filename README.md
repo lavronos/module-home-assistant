@@ -4,6 +4,9 @@ Independent LavronOS module package for Home Assistant bridge data and
 dashboard runtime.
 
 The module owns its page, dashboard widget, settings UI and server runtime.
+Its runtime page shows the connected Home Assistant instance, bridge health,
+synchronized resource counts and recent events. Before pairing, it shows one
+setup screen linked directly to the module settings.
 LavronOS stores user-entered settings in its encrypted SQLite settings table
 so module updates do not overwrite them.
 
@@ -15,9 +18,9 @@ repository.
 Release history is maintained in [CHANGELOG.md](CHANGELOG.md).
 
 ```bash
-git tag -a v0.3.6 -m "Release Home Assistant module 0.3.6"
+git tag -a v0.3.7 -m "Release Home Assistant module 0.3.7"
 git push origin main
-git push origin v0.3.6
+git push origin v0.3.7
 ```
 
 No WordPress credentials are required in this repository.

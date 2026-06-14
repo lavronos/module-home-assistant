@@ -4,6 +4,12 @@ All notable changes to the LavronOS Home Assistant module are documented here.
 
 ## [Unreleased]
 
+## [0.3.7] - 2026-06-14
+
+### Changed
+- Replaced raw API payload cards with a Home Assistant bridge dashboard, synchronized resource counts and recent events.
+- Added a clear first-run connection screen linked to the module settings.
+
 ## [0.3.6] - 2026-06-13
 
 ### Added
