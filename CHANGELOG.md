@@ -4,6 +4,13 @@ All notable changes to the LavronOS Home Assistant module are documented here.
 
 ## [Unreleased]
 
+## [0.3.8] - 2026-06-15
+
+### Fixed
+- Restored the complete v0.11 Home Assistant page inside the module package,
+  including bridge, room, device, entity, automation, scene and event views.
+- Centered module title, status and connection icons on both axes.
+
 ## [0.3.7] - 2026-06-14
 
 ### Changed
